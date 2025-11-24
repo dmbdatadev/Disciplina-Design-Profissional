@@ -1,0 +1,168 @@
+/* Estilos globais e reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", sans-serif; background: #F3F4F6; color: #111827; line-height: 1.6; }
+
+/* Variáveis de Cores */
+:root {
+    --primaria: #007ACC; /* Azul Principal */
+    --secundaria: #FF9900; /* Laranja de Destaque */
+    --acento: #16A34A; /* Verde de Acento */
+    --fundo-escuro: #1F2937;
+    --cartao: #ffffff; /* Fundo do Cartão */
+}
+
+/* Cabeçalho */
+.header-bg {
+    background: linear-gradient(135deg, #0f172a 0%, var(--primaria) 100%);
+}
+
+/* Títulos e Seções */
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--primaria);
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--primaria);
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.section-roda {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primaria);
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.section-content, .section-box {
+    background: var(--cartao);
+    padding: 1.25rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+/* Carrossel */
+.carousel-wrapper { position: relative; }
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    padding: 18px 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+
+.carousel-card {
+    min-width: 360px;        
+    max-width: 360px;
+    flex-shrink: 0;
+    background: #0f172a;  
+    color: #F3F4F6;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.25);
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carousel-card h3 { color: var(--secundaria); font-size: 1.125rem; margin-bottom: 0.5rem; }
+.card-detail-item { display: grid; grid-template-columns: 1fr 2fr; gap: .5rem; padding: .4rem 0; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+.card-title { color: var(--secundaria); }
+
+/* Cores dos Distintivos (Badges) */
+.badge { display:inline-block; padding: 6px 10px; border-radius: 999px; font-weight:700; font-size: 0.75rem; margin-bottom: 8px; }
+.badge-iniciante { background: #10B981; color: white; }
+.badge-intermediario { background: #2563EB; color: white; }
+.badge-avancado { background: #EF4444; color: white; }
+
+/* Controles do Carrossel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 12px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+.carousel-control.left-0 { left: 8px; }
+.carousel-control.right-0 { right: 8px; }
+.carousel-control:hover { background: rgba(0,0,0,0.85); }
+
+/* Filtros e Caixas de Seleção (Checkboxes) */
+.filters-box { display:flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.checkboxes-box { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+.checkboxes-box label { 
+    background: var(--cartao); 
+    padding: 8px 12px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: 600;
+    border: 1px solid #D1D5DB;
+}
+.checkboxes-box input[type="checkbox"]:checked + span {
+    color: var(--primaria);
+    font-weight: 700;
+}
+.checkboxes-box input[type="checkbox"] {
+    accent-color: var(--primaria); 
+}
+.checkboxes-box .opacity-50 {
+    background-color: #F9FAFB !important;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* Botão Principal */
+.btn-primary {
+    background: var(--primaria);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-primary:hover { background: #005bb5; }
+
+/* Tabela Comparativa */
+.table-scroll { margin-top: 1.25rem; overflow-x: auto; border-radius: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.comparative-table { min-width: 1000px; width: 100%; border-collapse: collapse; background: white; }
+.comparative-table th, .comparative-table td { padding: 14px; border: 1px solid #E5E7EB; text-align: left; vertical-align: top; }
+.comparative-table th { background: #0f172a; color: #fff; position: sticky; top: 0; font-weight: 700; }
+.comparative-table tr:nth-child(even) td { background-color: #F9FAFB; }
+.comparative-table td:first-child { background: #E5E7EB; font-weight: 700; color: #111827; }
+
+
+/* Cartões de Recursos */
+.resource-card { background: white; padding: 1.1rem; border-radius: 0.75rem; box-shadow: 0 6px 20px rgba(15,23,42,0.06); }
+.resource-title { font-weight: 800; margin-bottom: 0.6rem; }
+.resource-list a { color: #0f172a; font-weight: 600; text-decoration: none; }
+.resource-list a:hover { color: var(--primaria); text-decoration: underline; }
+
+/* Responsividade (Carrossel) */
+@media (max-width: 768px) {
+    .carousel-card { min-width: 80vw; max-width: 80vw; }
+    .checkboxes-box {
+        grid-template-columns: 1fr;
+    }
+}
