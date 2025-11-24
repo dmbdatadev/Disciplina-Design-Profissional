@@ -1,0 +1,134 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{times}
+
+% -------------------- CORES OFICIAIS DO LATTES ------------------------
+\definecolor{lattesblue}{HTML}{003366}
+\definecolor{lattesgray}{HTML}{555555}
+
+% -------------------- CONFIGURAÇÃO DA PÁGINA ---------------------------
+\geometry{
+  a4paper,
+  left=1.7cm,
+  right=1.7cm,
+  top=1.6cm,
+  bottom=1.6cm
+}
+
+\setlength{\parskip}{0.25em}
+\setlength{\parindent}{0pt}
+
+% -------------------- TÍTULOS NO ESTILO LATTES ------------------------
+\newcommand{\lattesSection}[1]{%
+  \vspace{0.9em}
+  \textcolor{lattesblue}{\textbf{\MakeUppercase{#1}}}%
+  \vspace{0.3em}\\[-0.3em]
+  \color{lattesblue}\rule{\linewidth}{0.8pt}
+  \vspace{0.5em}
+}
+
+% Reduz espaço entre itens
+\setlist{nosep}
+
+% -------------------- INÍCIO DO DOCUMENTO -----------------------------
+\begin{document}
+
+% ----------------------------------------------------------------------
+% DADOS PESSOAIS (VISUAL LATTES APRIMORADO)
+% ----------------------------------------------------------------------
+{\Large \textbf{Daniel Miranda Barbosa}}\\[-0.2em]
+\textcolor{lattesgray}{Brasília, DF — Brasil}\\
+\textcolor{lattesgray}{Telefone: +55 (61) 99984-2574}\\
+\textcolor{lattesgray}{E-mail: \href{mailto:daniel.miranda.barbosa@gmail.com}{daniel.miranda.barbosa@gmail.com}}\\
+\textcolor{lattesgray}{LinkedIn: \url{https://www.linkedin.com/in/dmbdatadev}}\\
+\textcolor{lattesgray}{GitHub: \url{https://www.github.com/dmbdatadev}}\\
+
+% ----------------------------------------------------------------------
+\lattesSection{Dados Gerais}
+
+\textbf{Área de Atuação:} Desenvolvimento de Software; Ciência de Dados; Segurança da Informação; Automação; Prevenção de Perdas.
+
+% ----------------------------------------------------------------------
+\lattesSection{Formação Acadêmica/Titulação}
+
+\textbf{Graduação em Análise e Desenvolvimento de Sistemas}.  
+Centro de Ensino Unificado do Distrito Federal (UDF).  
+Conclusão prevista: Junho/2027.
+
+% ----------------------------------------------------------------------
+\lattesSection{Atuação Profissional}
+
+\textbf{Assistente Administrativo — Atacadão Dia-a-Dia}  
+Brasília/DF — Abril/2025 (Atual)  
+\begin{itemize}[left=1.2em]
+  \item Monitoramento e prevenção de perdas.
+  \item Criação e acompanhamento de KPIs (Monday, Power BI).
+  \item Geração de insights e análise de dados.
+  \item Estratégias para mitigação e recuperação de perdas.
+  \item Padronização e automação de processos via Monday e Moki.app.
+\end{itemize}
+
+\textbf{Suporte Técnico e Desenvolvimento — Freelancer}  
+2020 (Atual)  
+\begin{itemize}[left=1.2em]
+  \item Scripts automatizados em Python e Java.
+  \item Manipulação e análise de dados com ferramentas de BI.
+\end{itemize}
+
+% ----------------------------------------------------------------------
+\lattesSection{Projetos de Pesquisa e Desenvolvimento}
+
+\textbf{EcoTracker} — Sistema para gestão e acompanhamento de resíduos recicláveis e orgânicos.  
+
+\textbf{Hackathon SparkSpot 2024 — UCB}  
+3º lugar. Desenvolvimento de solução tecnológica inovadora.
+
+% ----------------------------------------------------------------------
+\lattesSection{Idiomas}
+
+\textbf{Inglês}: Avançado (C1)
+
+% ----------------------------------------------------------------------
+\lattesSection{Áreas de Interesse}
+
+Ciência de Dados; Business Intelligence; Backend; Segurança Cibernética; LGPD; Automação; Prevenção de Perdas.
+
+% ----------------------------------------------------------------------
+\lattesSection{Competências Técnicas}
+
+Python; C; Java; SQL; Power BI; Looker Studio; Monday; Moki App; Microsoft 365; HubSpot; Ellévti; Scrum.
+
+% ----------------------------------------------------------------------
+\lattesSection{Cursos de Curta Duração}
+
+\textbf{Cisco Networking Academy}  
+Ethical Hacker Path (170h); Network Support and Security (170h); Cybersecurity Analyst JR (120h).  
+
+\textbf{FIAP}  
+Python (80h); BI (40h); Big Data \& Analytics (60h); Java (60h); Design Thinking (50h); Leadership Communication (40h).  
+
+\textbf{Data Science Academy}  
+Power BI (100h); Python (96h).  
+
+\textbf{Fundação Bradesco}  
+Office 365 (175h); Segurança da Informação (40h).  
+
+\textbf{SENAI}  
+Lógica de Programação (14h); Tecnologia da Informação (14h).  
+
+\textbf{IBM SkillsBuild}  
+Carreiras: Data Scientist, AI Engineer, Developer Associate, Data Analyst, Security Admin, além de cursos em Data Science, Big Data, IA e Cybersecurity.
+
+% ----------------------------------------------------------------------
+
+\end{document}
